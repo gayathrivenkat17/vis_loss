@@ -8,7 +8,8 @@ The code has been provided for one pathology, PED. For other pathologies IRF and
  
 Under csv_files folder we have provided one instance in train.csv for reference. Similarly prepare test.csv
 
-The pretrainednormal folder contains a normal classification model for PED pathology trained with cross-entropy loss which has to be fine-tuned using the approach given in the paper. The complete trained model for PED pathology is present in pretrainedmodel folder. 
+The pretrainednormal folder contains a normal classification model for PED pathology trained with cross-entropy loss which has to be fine-tuned using the approach given in the paper. The complete trained model for PED pathology is present in pretrainedmodel folder. The pretrained models can be downloaded from the below google drive link:
+https://drive.google.com/drive/u/0/folders/1NpDiSCSF7swe7Z--_uV1eqVqm3Bl6s5T
 
 The testing of model can be done with the following command.
 python test.py --model_name "Small_Inception ResnetV2_with_pretrained_weights" --disease "PED" --weight_path "../fulltrainedmodels/model_PED_BestF1_finetune_dice_loss.pt"
